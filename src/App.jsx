@@ -17,13 +17,15 @@ import { Airdrop } from './Airdrop';
 function App() {
 
   return (
-    <ConnectionProvider endpoint={"https://solana-devnet.g.alchemy.com/v2/4e2GZzAHXiBTaK01OQzlJZnfxJnt-wFV"}>
+    <ConnectionProvider endpoint={"https://solana-devnet.g.alchemy.com/v2/Z9eXJaniFaiJ4zFRvrjNWtWCn7V-3wVc"}>
       <WalletProvider wallets={[]} autoConnect>
         <WalletModalProvider>
-          <WalletMultiButton />
-          <WalletDisconnectButton />
-          <div>
-            Hi there!
+          <div style={{ 
+            display: 'flex',
+            justifyContent: 'space-between'
+            }}>
+            <WalletMultiButton />
+            <WalletDisconnectButton />
           </div>
            <Airdrop/>
          </WalletModalProvider>
