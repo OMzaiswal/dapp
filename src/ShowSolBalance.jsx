@@ -1,4 +1,5 @@
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
+import { LAMPORTS_PER_SOL } from "@solana/web3.js";
 import { useState } from "react";
 
 
@@ -16,6 +17,6 @@ export function ShowSolBalance() {
     getBalance();
 
     return <div>
-        <p>Balance: {balance} SOL </p>
+        <p>Balance: {balance / LAMPORTS_PER_SOL} SOL </p>
     </div>
 }
