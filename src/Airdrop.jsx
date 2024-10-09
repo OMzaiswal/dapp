@@ -13,11 +13,11 @@ export function Airdrop() {
     }
 
     return <div style={{
-        height: '100vh',
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: 'column'
+        // height: '100vh',
+        // display: "flex",
+        // justifyContent: "",
+        // alignItems: "center",
+        // flexDirection: 'column'
     }}>
         <h1>Welcome !</h1>
         <div>
@@ -25,7 +25,7 @@ export function Airdrop() {
         style={{
             padding: '10px',
             paddingLeft: '5px',
-            width: '100px',
+            width: '50px',
             marginRight:'10px'
         }} 
         onChange={ e => setAmount(e.target.value)}></input>
